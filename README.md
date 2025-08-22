@@ -8,15 +8,24 @@ Netexec repo : [https://github.com/Pennyw0rth/NetExec](https://github.com/Pennyw
 ## Setup
 
 ```
-⚠️ it’s modules have been tested in lab environments and rarely in production.
+⚠️ These modules have been tested mainly in lab environments and only rarely in production. Use with caution.
 ```
 
-First you need to setup netexec using devellopement environnement, you can just follow the official documentation ;
+First, set up NetExec in a development environment by following the official documentation:
 
 - [Install netexec using poetry](https://www.netexec.wiki/getting-started/installation/installation-on-unix#installation-for-development-using-poetry)
 
-Then you can juste take the module python file and paste id on the following path : 
-```
+Once NetExec is installed, copy the desired Python module file into the following path:
 
 ```
+cp smb/file.py /opt/NetExec/nxc/modules
+```
+
+Then, run NetExec with Poetry to load and use the new module:
+```
+poetry run nxc smb -L
+```
+
+![Module preview](images/pictures1.png)
+
 
