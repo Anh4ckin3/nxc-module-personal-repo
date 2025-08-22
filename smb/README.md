@@ -9,12 +9,12 @@ This idea comes from my tool [pyRestrictedAdmin](https://github.com/Anh4ckin3/py
 **modes:**
 
 - read : See the value of the registry key and deduce if PTH is is possible or not
-![Module preview](images/picture2.png)
+![Module preview](/images/picture2.png)
 
 - disable : Set value to 1, PTH will be no longer possible
-![Module preview](images/picture4.png)
+![Module preview](/images/picture4.png)
 
 - enable : Set value to 0, that will enable the security option "RestricedAdmin" and allow PTH on RDP
-![Module preview](images/picture3.png)
+![Module preview](/images/picture3.png)
 
 
