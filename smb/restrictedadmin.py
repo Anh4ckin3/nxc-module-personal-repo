@@ -79,8 +79,11 @@ class NXCModule:
                 query = rrp.hBaseRegQueryValue(remoteOps._RemoteOperations__rrp, keyHandle, "DisableRestrictedAdmin\x00")
                 return query[1]                
             except Exception as e:
-                context.log.error("RemoteOperations failed: %s" % str(e))
-                sys.exit(1) 
+                if 'code: 0x2' in str(e):
+                    return 1
+                else:
+                    context.log.error("RemoteOperations failed: %s" % str(e))
+                    sys.exit(1) 
 
         except Exception as e:
                 context.log.error("RemoteOperations failed: %s" % str(e))
